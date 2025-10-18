@@ -1,0 +1,28 @@
+{
+  "name": "webjudol-simulation",
+  "version": "1.0.0",
+  "description": "Professional online gaming platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": " concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "concurrently \"npm run build:backend\" \"npm run build:frontend\"",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "concurrently \"npm run test:backend\" \"npm run test:frontend\"",
+    "test:backend": "cd backend && npm run test",
+    "test:frontend": "cd frontend && npm run test"
+  },
+  "keywords": [
+    "gaming",
+    "platform",
+    "online",
+    "casino"
+  ],
+  "author": "WebJudol Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
